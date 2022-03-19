@@ -1,0 +1,111 @@
+/* index.html */
+
+.bg_custom1 {
+    background-image: url(images/picture1.jpg);
+    background-position: top;
+}
+
+.custom-nav-z {
+    z-index: 95;
+}
+
+.bg_custom2 {
+    background-image: url(images/landscape3.jpg);
+}
+
+.bg_position_bottom {
+    background-position: bottom;
+}
+
+.bg_position_top {
+    background-position: center;
+}
+
+.button-custom {
+    margin-right: 15px;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.button-custom:hover {
+    background: rgb(255,255,255,0.3);
+}
+
+.portrait {
+    border-radius: 50%;
+}
+
+.bg-opacity-50 {
+    background: rgb(255,255,255,0.4);
+    backdrop-filter: blur(4px);
+}
+
+/*landscapes.html*/
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+  z-index: 99; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#title {
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    z-index: 100;
+    position: absolute;
+    font-size: 90px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+}
+
+/* css for js */
+/* "Naming" */
+.img-table {
+    border-radius: 3px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+li {
+    margin: inherit;
+}
+
+/* stories.js */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
